@@ -1,0 +1,25 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "Jenkins package.json .gitignore test",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "licenses" : [
+    {
+      "type": "ISC",
+      "url": "https://opensource.org/licenses/ISC"
+    }
+  ],
+  
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node test/app.test.js"
+  },
+  "engines" : {
+    "node": ">=18.0.0"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
