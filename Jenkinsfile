@@ -2,8 +2,8 @@ pipeline {
     agent any
     stages {
         stage ('Checkout') {
-             steps {
-                git 'https://github.com/NgnTienDat/Lab2_jenkins.git'
+            steps {
+                git branch: 'main', url: 'https://github.com/NgnTienDat/Lab2_jenkins.git'
             }
         }
 
