@@ -5,11 +5,18 @@ pipeline {
         }
     }
     stages {
+        stage ('Checkout') {
+             steps {
+                git 'https://github.com/NgnTienDat/Lab2_jenkins.git'
+            }
+        }
+
         stage ('Install') {
             steps {
                 sh 'npm install'
             }
         }
+
         stage ('Build') {
             steps {
                 sh 'npm run build'
